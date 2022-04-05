@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RANDOM RECIPE GENERATOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <div class="unbreakable-container">
+        <div class="unbreakable has-text-centered">
+            <span class="un">Random</span><span class="able"> Recipe </span><span class="break"></span>
+        </div>
+        <div class="ks has-text-centered">Generator</div>
+    </div>
+    <!-- <div class="point"></div> -->
+    <br>
+    <h1 id="currentDayOf" class="day has-text-centered fade-in"></h1>
+    <h1 id="currentDay" class="day has-text-centered fade-in"></h1>
+
+    <section class="hero fade-in">
+        <div class="hero-body">
+            <div class="container ">
+                <h1 class="title colorwhite has-text-centered double round1">
+                    Can't decide what to cook? Let us take the pain of choosing so you don't have to.
+                </h1>
+                <br>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container ">
+        <div class="columns ">
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <div class="card ">
+                    <div class="card-content">
+                        <p class="here has-text-centered randombutton  is-bold">
+                            Enter your main ingredient and click on the button for a random recipe!
+                        </p>
+                        <form id="user-form" class="card-body" align="center">
+                            <input name="ingredient" id="ingredient" type="text" autofocus="true" class="form-input"/>
+                        </form>
+                    </div>
+                    <div class="container">
+                        <div class="has-text-centered">
+                            <input id="find-food" type="submit" value="Random Recipe" class="button is-info">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- <div id="mood-giphy" class="has-text-centered"></div> -->
+                    <!-- <div id="test" class="has-text-centered"></div> -->
+                    <!-- <div id="mealPic" class="has-text-centered"></div> -->
+                    <div id="food-giphy" class="has-text-centered"></div>
+                    <h1 id="recipeName" class="has-text-centered"></h1>
+                    <div id="ingredients" class="has-text-centered"></div>
+                    <div id="recipeSite" class="has-text-centered"></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <br>
+    <br>
+
+    <footer class="">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Random Recipe Generator</strong>
+                <br>
+                By Christopher, Conner, Francis, & Godfrey.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+
+</body>
+</html>
