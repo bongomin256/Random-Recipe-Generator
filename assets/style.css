@@ -12,6 +12,7 @@ span {
     filter: alpha(opacity=0);
 }
 
+/* Creates header text animation */
 .un {
     -webkit-transition: all .3s ease-in-out 1.7s;
     transition: all .3s ease-in-out 1.7s;
@@ -31,7 +32,7 @@ span {
 }
 
 .ks {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     line-height: 1;
 
@@ -91,6 +92,17 @@ span {
     transform: translateX(0);
 }
 
+/* Displays current day and time */
+.fade-in {
+    color: white;
+    font-family: 'digital-clock-font';
+    animation: fadeIn ease 30s;
+    -webkit-animation: fadeIn ease 30s;
+    -moz-animation: fadeIn ease 30s;
+    -o-animation: fadeIn ease 30s;
+    -ms-animation: fadeIn ease 30s;
+}
+
 main {
     background-color: #b1bfd8;
     background-image: linear-gradient(315deg, #ccc8c6 0%, #c7d8c6 74%);
@@ -112,18 +124,31 @@ h1.double {
     animation: gradient 30s ease infinite;
     color: gray;
     margin-inline: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: medium;
+}
+
+.card {
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .footer {
     background-color: #efd9c1;
     padding: 1rem 1rem 1rem;
 }
+
 footer {
     background: linear-gradient(-45deg, #ccc8c6, #efd9c1, #c7d8c6, #a9b7c0);
     background-size: 600% 600%;
     animation: gradient 30s ease infinite;
 }
 
+/* Creates keyframe animation */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
