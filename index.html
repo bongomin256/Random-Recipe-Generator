@@ -48,11 +48,9 @@
                         </div>
                     </div>
                     <br>
-                    <div id="test" class="has-text-centered"></div>
-                    <div id="food-giphy" class="has-text-centered"></div>
-                    <div id="mood-giphy" class="has-text-centered"></div>
                     <h1 id="recipeName" class="has-text-centered"></h1>
-                    <div id="mealPic" class="has-text-centered"></div>
+                    <div id="food-giphy" class="has-text-centered"></div>
+                    <div id="ingredients" class="has-text-centered"></div>
                     <div id="recipeSite" class="has-text-centered"></div>
                 </div>
             </div>
@@ -75,6 +73,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 
+    <script>
+        // script for title animation
+        var hotbod = document.querySelector("body");
+
+        function doStuff() {
+            hotbod.className += "animate";
+        }
+
+        window.onload = function () {
+            doStuff();
+        };
+    </script>
 
 </body>
 </html>
