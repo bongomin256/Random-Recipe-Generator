@@ -12,7 +12,7 @@
 
 ## Description
 
-The goal of this project is to create a platform where the user can enter one ingredient and the application provides a random recipe with a picutre, the ingredients list, and a link to the directions of the recipe for the searched ingredient. There will also be a random gif provided based off the users input. The users search history will be kept in a list and will be displayed one the search is done. The user can click on a previous search item to display the information again. Each search will be stored into local storage which allows the recipe to remain in the history if the page is reloaded.
+The goal of this project is to create a platform where the user can enter one ingredient and the application provides a random recipe with a picutre, the ingredients list, and a link to the directions of the recipe for the searched ingredient. There will also be a random gif provided based off the user's input. The user's search history will be kept in a list and will be displayed once the search is done. The user can click on a previous search item to display the information again. Each search will be stored into local storage which allows the recipe to remain in the history if the page is reloaded.
 
 ## GitHub Repository and Page
 
@@ -25,7 +25,7 @@ The goal of this project is to create a platform where the user can enter one in
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://www.w3schools.com/js/)
-- [Bulma](https://bulma.io/)
+- [Bulma](https://bulma.io/documentation/)
 - [jQuery](https://jquery.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Edemam API](https://developer.edamam.com/edamam-docs-recipe-api)
