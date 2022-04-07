@@ -12,26 +12,28 @@
 
 ## Description
 
-
+The goal of this project is to create a platform where the user can enter one ingredient and the application provides a random recipe with a picutre, the ingredients list, and a link to the directions of the recipe for the searched ingredient. There will also be a random gif provided based off the users input. The users search history will be kept in a list and will be displayed one the search is done. The user can click on a previous search item to display the information again. Each search will be stored into local storage which allows the recipe to remain in the history if the page is reloaded.
 
 ## GitHub Repository and Page
 
-- [GitHub Repository]()
+- [GitHub Repository](https://github.com/bongomin256/Random-Recipe-Generator.git)
 
-- [GitHub Page]()
+- [GitHub Page](https://bongomin256.github.io/Random-Recipe-Generator/)
 
 ## Technologies
 
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://www.w3schools.com/js/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Bulma](https://bulma.io/)
 - [jQuery](https://jquery.com/)
 - [Font Awesome](https://fontawesome.com/)
+- [Edemam API](https://developer.edamam.com/edamam-docs-recipe-api)
+- [Giphy API](https://developers.giphy.com/docs/api#quick-start-guide)
 
 ## Installation
 
-To view this webpage on a local machine, pull the code from [GitHub]() using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
+To view this webpage on a local machine, pull the code from [GitHub](https://github.com/bongomin256/Random-Recipe-Generator.git) using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
 
 - Operating System: macOS Monterey Version 21.1
 - Visual Studio Code: Version 1.64.2
@@ -40,7 +42,7 @@ To view this webpage on a local machine, pull the code from [GitHub]() using Ter
 
 ## Usage
 
-To view the completed project, visit my [GitHub Page]() or refer to the [Installation](#installation) section of this README.
+To view the completed project, visit the [GitHub Page](https://bongomin256.github.io/Random-Recipe-Generator/) or refer to the [Installation](#installation) section of this README.
 
 ## Screenshot
 
@@ -49,7 +51,7 @@ To view the completed project, visit my [GitHub Page]() or refer to the [Install
 
 ## Credits
 
-This was the sixth homework assignment as part of the [University of Washington Coding Boot Camp](https://bootcamp.uw.edu/coding/). Some of the information used to complete this project was provided by the instructors of this Boot Camp. But other information were obtained, but not limited to, through the following resources:
+This was the first project as part of the [University of Washington Coding Boot Camp](https://bootcamp.uw.edu/coding/). Some of the information used to complete this project was provided by the instructors of this Boot Camp. But other information were obtained, but not limited to, through the following resources:
 
 - [Google](https://www.google.com/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
