@@ -1,9 +1,9 @@
 var hotbod = document.querySelector("body");
 
-        function doStuff() {
-            hotbod.className += "animate";
-        }
+function doStuff() {
+    hotbod.className += "animate";
+}
 
-        window.onload = function () {
-            doStuff();
-        };
+window.onload = function () {
+    doStuff();
+};
