@@ -75,7 +75,7 @@ var generateRecipeHandler = function (event){
 
     console.log(event)
     
-    var recipeName = recipeInputName.value.trim()
+    var recipeName = recipeInputName.value.trim().toUpperCase()
 
     if (recipeName){
         // calling the callEdemam to use the input to fetch
