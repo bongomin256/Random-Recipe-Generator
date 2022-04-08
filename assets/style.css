@@ -149,6 +149,38 @@ footer {
     animation: gradient 30s ease infinite;
 }
 
+#search-history {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+.btn-history {
+    margin: 3px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.btn-history:hover {
+    background-color: #268AD6;
+    color: white; 
+    border: none;
+}
+
+#header-history {
+    font-weight: bold;
+    font-size: 25px;
+    color: #808080;
+    text-decoration: underline 3px;
+    text-underline-offset: 20%;
+}
+
+#card {
+    text-align: center;
+}
+
 /* Creates keyframe animation */
 @keyframes gradient {
     0% {
