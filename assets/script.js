@@ -1,12 +1,92 @@
 var hotbod = document.querySelector("body");
+var searchBtn = document.querySelector('#find-food');
+var recipeInputName = document.querySelector('#ingredient');
+var recipeEl = document.querySelector('#recipeName');
+var foodImage = document.querySelector('#food-image');
+var giphyImage = document.querySelector('#food-giphy');
+var ingredientEl = document.querySelector('#ingredient');
+var recipeSiteEl = document.querySelector('#recipeSite');
+var orderListRecipe = document.querySelector('.orderList');
+var ingredHeader = document.querySelector('#strongEl');
+var searchHistoryEl = document.querySelector('#search-history');
 
 function doStuff() {
     hotbod.className += "animate";
 }
 
-        window.onload = function () {
-            doStuff();
-        };
+window.onload = function () {
+    doStuff();
+};
+
+// creating an empty array to hold the search history
+var recipeHistory = []
+
+// Getting recipe from local storage 
+function getRecipeHistory() {
+  var recipeHistorySearch = JSON.parse(localStorage.getItem('recipeHistory'))
+  if (recipeHistorySearch){
+    recipeHistory = recipeHistorySearch
+  }
+  //calling display function 
+  displayRecipeHistory();
+}
+
+// Saving the into the local storage
+function saveRecipeHistory(recipeName) {
+  recipeHistory.unshift({recipeName});
+
+  localStorage.setItem("recipeHistory", JSON.stringify(recipeHistory)) 
+} 
+
+// Making the search history clickable
+function clickedRecipeHistory(event) {
+  event.preventDefault();
+  //calling the callEdamam and callGiphy function when search history is clicked.
+  callEdemam(event.target.textContent)
+  callGiphy(event.target.textContent)
+}
+
+// Displaying the search history
+function displayRecipeHistory(){
+  searchHistoryEl.innerHTML = '';
+  var historyLength = recipeHistory.length
+  
+  //setting numbers of search history to be displayed
+  if(historyLength > 10){
+    historyLength = 10
+  } 
+
+  for(var i = 0; i < historyLength; i++){
+    // Adding button to the search history
+    var recipeHistoryBtn = document.createElement('button')
+    recipeHistoryBtn.setAttribute('class', 'btn-history')
+    recipeHistoryBtn.textContent = recipeHistory[i].recipeName
+    searchHistoryEl.appendChild(recipeHistoryBtn)
+
+    // Adding eventlistener to the search history
+    recipeHistoryBtn.addEventListener('click', clickedRecipeHistory)
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $(document).ready(function () {
