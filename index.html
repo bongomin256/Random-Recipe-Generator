@@ -1,92 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <title>RANDOM RECIPE GENERATOR</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-</head>
-<body>
-    <div class="unbreakable-container">
-        <div class="unbreakable has-text-centered">
-            <span class="un">Random</span><span class="able"> Recipe </span><span class="break"></span>
-        </div>
-        <div class="ks has-text-centered">Generator</div>
-    </div>
-    <br>
-
-    <section class="hero fade-in">
-        <div class="hero-body">
-            <div class="container ">
-                <h1 class="title colorwhite has-text-centered double round1">
-                    Can't decide what to cook? Let us take the pain of choosing so you don't have to.
-                </h1>
-                <br>
-            </div>
-        </div>
-    </section>
-    
-    <div class="container ">
-        <div class="columns ">
-            <div class="column is-3">
-                <div class="card" id="card">
-                    <h3 id="header-history">Search History</h3>
-                    <ul id="search-history" class="list-group"></ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RANDOM RECIPE GENERATOR</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="unbreakable-container">
+                <div class="unbreakable has-text-centered">
+                    <span class="un">Random</span><span class="able"> Recipe </span><span class="break"></span>
                 </div>
+                <div class="ks has-text-centered">Generator</div>
             </div>
-            <div class="column is-8 is-offset-1">
-                <div class="card ">
-                    <div class="card-content">
-                        <p class="here has-text-centered randombutton  is-bold">
-                            Enter your main ingredient and click on the button for a random recipe!
-                        </p>
-                        <form id="user-form" class="card-body" align="center">
-                            <input name="ingredient" id="ingredient" type="text" autofocus="true" class="form-input"/>
-                        </form>
-                    </div>
-                    <div class="container">
-                        <div class="has-text-centered">
-                            <input id="find-food" type="submit" value="Random Recipe" class="button is-info">
-                        </div>
-                    </div>
-                    <br>
-                    <h1 id="recipeName" class="has-text-centered">
-                        <!-- recipe name -->
+        </header>
+
+        <br>
+        
+        <main>
+            <section class="hero fade-in">
+                <div class="hero-body">
+                    <div class="container ">
+                        <h1 class="title colorwhite has-text-centered double round1">
+                            Can't decide what to cook? Let us take the pain of choosing so you don't have to.
                         </h1>
-                        <div class="has-text-centered">
-                            <img id="food-image" src="" alt="" >
-                        </div>
-                        <div id="ingredients" class="has-text-centered">
-                            <strong id="strongEl"></strong> 
-                            <ul class="orderList">
-    
-                                 <!-- recipes will go here -->
-                            </ul>
-                        </div>
-                        <div id="recipeSite" class="has-text-centered"></div>
                         <br>
-                        <div  class="has-text-centered">
-                            <img id="food-giphy" src="" alt="">
-                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>    
-    </div>
-    <br>
-    <br>
+            </section>
+            <section class="container ">
+                <div class="columns ">
+                    <article class="column is-3">
+                        <div class="card" id="card">
+                            <h3 id="header-history">Search History</h3>
+                            <ul id="search-history" class="list-group"></ul>
+                        </div>
+                    </article>
+                    <article class="column is-8 is-offset-1">
+                        <div class="card ">
+                            <div class="card-content">
+                                <p class="here has-text-centered randombutton  is-bold">
+                                    Enter your main ingredient and click on the button for a random recipe!
+                                </p>
+                                <form id="user-form" class="card-body" align="center">
+                                    <input name="ingredient" id="ingredient" type="text" autofocus="true" class="form-input"/>
+                                </form>
+                            </div>
+                            <div class="container">
+                                <div class="has-text-centered">
+                                    <input id="find-food" type="submit" value="Random Recipe" class="button is-info">
+                                </div>
+                            </div>
+                            <br>
+                            <h1 id="recipeName" class="has-text-centered">
+                                <!-- recipe name -->
+                            </h1>
+                            <div class="has-text-centered">
+                                <img id="food-image" src="" alt="" >
+                            </div>
+                            <div id="ingredients" class="has-text-centered">
+                                <strong id="strongEl"></strong> 
+                                <ul class="orderList">
+        
+                                     <!-- recipes will go here -->
+                                </ul>
+                            </div>
+                            <div id="recipeSite" class="has-text-centered"></div>
+                            <div  class="has-text-centered">
+                                <img id="food-giphy" src="" alt="">
+                            </div>
+                        </div>
+                    </article>
+                </div>    
+            </section>
+        </main>
 
-    <footer class="">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Developed by:</strong>
-                <br>
-                 <a href="https://github.com/conneriraola">Conner</a> / <a href="https://github.com/nayrsicnarf">Francis</a> / <a href="https://github.com/bongomin256">Godfrey</a>
-            </p>
-        </div>
-    </footer>
+        <br>
+        <br>
+
+        <footer class="">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Developed by:</strong>
+                    <br>
+                     <a href="https://github.com/conneriraola">Conner</a> / <a href="https://github.com/nayrsicnarf">Francis</a> / <a href="https://github.com/bongomin256">Godfrey</a>
+                </p>
+            </div>
+        </footer>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/script.js"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/script.js"></script>
+    </body>
 </html>
