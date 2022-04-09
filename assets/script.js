@@ -72,8 +72,6 @@ function displayRecipeHistory(){
 // Handling the user input
 var generateRecipeHandler = function (event){
     event.preventDefault()
-
-    console.log(event)
     
     var recipeName = recipeInputName.value.trim().toUpperCase()
 
@@ -90,9 +88,8 @@ var generateRecipeHandler = function (event){
         saveRecipeHistory(recipeName)
         getRecipeHistory()
         
-        
       } else {
-        alert('Please enter the recipe name')
+        alert('Please enter the main ingredient')
     }
     
 }
@@ -106,15 +103,12 @@ var callEdemam = function (recipeName) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data)
 
+        // the data we fetched 
         var newData = data.hits[0]
-        console.log(newData.recipe.label)
         var giphySearchData = newData.recipe.label
 
-
         var newDataEl = data.hits
-        console.log(newDataEl)
         // Looping through the data 
         for(var i = 0; i < newDataEl.length; i++){
           // picking a random recipe from the loop
@@ -124,24 +118,27 @@ var callEdemam = function (recipeName) {
           // recipe name section
           recipeEl.textContent = 'Recipe Name: ' + myOption.recipe.label
           recipeEl.setAttribute('style', 'font-weight: bold; padding-bottom: 5px;')
-          console.log(recipeEl.textContent)
 
           //section for the recipe image
           var image = myOption.recipe.image
-          console.log(image)
           foodImage.setAttribute('src', image)
-
         }
 
         // recipe site section
         var recipeSiteLink = myOption.recipe.url
-        //creating an anchor tag
+        //creating an anchor tag that will hold the link to websites for the directions
         var aTag = document.createElement('a')
         aTag.textContent = 'Click here for the directions'
+
+        // Adding the attributes to the aTag
         aTag.setAttribute('href', recipeSiteLink)
         aTag.setAttribute('target', '_blank')
-        aTag.setAttribute('style', 'background: red; color: white; padding: 5px; font-weight: bold;')
+        aTag.setAttribute('style', 'background: red; color: white; padding: 5px; font-weight: bold; border-radius: 4px;')
+
+        // clearing the contents
         recipeSiteEl.innerHTML = '';
+
+        // Appending the li to the ul
         recipeSiteEl.appendChild(aTag)
         
         // section for ingredients
@@ -149,12 +146,13 @@ var callEdemam = function (recipeName) {
         orderListRecipe.innerHTML = '';
         for (var i = 0; i < ingredient.length; i++) {
           var ingredientData = ingredient[i]
-          console.log(ingredientData)
           
+          // creating a list element for the ingredients
           var ingredList = document.createElement('li')
           ingredList.textContent = ingredientData
           ingredHeader.textContent = 'Ingredients'
-         
+
+          // Appending the ingredList
           orderListRecipe.appendChild(ingredList)
           orderListRecipe.setAttribute('style','padding-bottom: 5px;')
         }
@@ -172,16 +170,14 @@ var callGiphy = function (recipeName) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data)
         
         var dataArr = data.data
-        console.log(dataArr)
         for (var i = 0; i < dataArr.length; i++) {
           var giphyData = dataArr[Math.floor(Math.random() * dataArr.length)]
           giphyDisplay = giphyData.images.fixed_width.url
-          console.log(giphyDisplay)
-
+    
           giphyImage.setAttribute('src', giphyDisplay)
+          giphyImage.setAttribute('style', 'margin-top: 10px;')
 
         }
     });
