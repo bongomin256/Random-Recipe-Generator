@@ -178,7 +178,7 @@ var callGiphy = function (recipeName) {
         console.log(dataArr)
         for (var i = 0; i < dataArr.length; i++) {
           var giphyData = dataArr[Math.floor(Math.random() * dataArr.length)]
-          giphyDisplay = giphyData.images.fixed_width.mp4
+          giphyDisplay = giphyData.images.fixed_width.url
           console.log(giphyDisplay)
 
           giphyImage.setAttribute('src', giphyDisplay)
