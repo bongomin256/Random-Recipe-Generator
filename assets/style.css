@@ -23,6 +23,7 @@ span {
     -webkit-transition: all .1s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
     transition: all .1s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
     letter-spacing: -.07em;
+    color: red;
 }
 
 .break {
