@@ -154,6 +154,7 @@ footer {
     flex-direction: column;
     margin: 10px;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -171,10 +172,11 @@ footer {
 
 #header-history {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     color: #808080;
     text-decoration: underline 3px;
     text-underline-offset: 20%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #card {
