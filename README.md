@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Description](#description)
-- [GitHub Repository and Page](#GitHub-Repository-and-Page)
+- [GitHub Repository and Page and Presentation](#GitHub-Repository-and-Page-and-Presentation)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,11 +14,13 @@
 
 The goal of this project is to create a platform where the user can search for one ingredient and the application will provide a random recipe with a picutre, the ingredients list, and a link to the directions of the recipe for the searched ingredient. There will also be a random gif provided based off the user's search input. The user's search history will be kept in a list and will be displayed once the search is done. The user can click on a previous search item to display another random recipe. Each search will be stored into local storage which allows the search items to remain in the history if the page is reloaded.
 
-## GitHub Repository and Page
+## GitHub Repository and Page and Presntation
 
 - [GitHub Repository](https://github.com/bongomin256/Random-Recipe-Generator.git)
 
 - [GitHub Page](https://bongomin256.github.io/Random-Recipe-Generator/)
+
+- [Google Slide Presentation](https://docs.google.com/presentation/d/1Mo5N3xwRZ0rRjmfu8__pBaGWvh1jqmo7Nxs9fo4PgC4/edit?usp=sharing)
 
 ## Technologies
 
