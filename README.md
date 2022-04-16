@@ -4,6 +4,7 @@
 
 - [Description](#description)
 - [GitHub Repository and Page and Presentation](#GitHub-Repository-and-Page-and-Presentation)
+- [GitHub Profiles](#GitHub-Profiles)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -21,6 +22,14 @@ The goal of this project is to create a platform where the user can search for o
 - [GitHub Page](https://bongomin256.github.io/Random-Recipe-Generator/)
 
 - [Google Slide Presentation](https://docs.google.com/presentation/d/1Mo5N3xwRZ0rRjmfu8__pBaGWvh1jqmo7Nxs9fo4PgC4/edit?usp=sharing)
+
+## GitHub Profiles
+
+- [Conner Iraola GitHub Profile](https://github.com/conneriraola)
+
+- [Francis Aguinaldo GitHub Profile](https://github.com/nayrsicnarf)
+
+- [Godfrey Bongomin GitHub Profile](https://github.com/bongomin256)
 
 ## Technologies
 
