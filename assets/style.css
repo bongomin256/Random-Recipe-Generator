@@ -13,26 +13,26 @@ span {
 }
 
 /* Creates header text animation */
-.un {
+.an {
     -webkit-transition: all .3s ease-in-out 1.7s;
     transition: all .3s ease-in-out 1.7s;
     letter-spacing: -.07em;
 }
 
-.able {
-    -webkit-transition: all .1s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
-    transition: all .1s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+.mate {
+    -webkit-transition: all .1s cubic-bezier(1.000, 1.000, 0.220, 1.000) 2.0s;
+    transition: all .1s cubic-bezier(1.000, 1.000, 0.220, 1.000) 2.0s;
     letter-spacing: -.07em;
     color: red;
 }
 
-.break {
-    -webkit-transition: all .2s ease-in-out 2s;
+.i {
+    -webkit-transition: all .4s ease-in-out 4s;
     transition: all .2s ease-in-out 2s;
     letter-spacing: -.07em;
 }
 
-.ks {
+.gen {
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
     line-height: 1;
@@ -50,7 +50,7 @@ span {
     color: black;
 }
 
-.animate .un {
+.animate .an {
     font-size: 40px;
 
     -webkit-transform: scale(1.5, 1.5);
@@ -62,7 +62,7 @@ span {
     filter: alpha(opacity=100);
 }
 
-.animate .break {
+.animate .i {
     font-size: 60px;
 
     -webkit-transform: scale(1.5, 1.5);
@@ -74,7 +74,7 @@ span {
     filter: alpha(opacity=100);
 }
 
-.animate .able {
+.animate .mate {
     font-size: 80px;
 
     -webkit-transform: scale(1.5, 1.5);
@@ -87,7 +87,7 @@ span {
 
 }
 
-.animate .ks {
+.animate .gen {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
